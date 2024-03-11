@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto G flexivel">
+    </picture><!--picture serve para organizar suas imagens em uma tag (picture)-->
+
+    <h1>Reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios</p>
+    <audio src="midia/93million.mp3" autoplay controls></audio> <!--formatos de audio (mp3, ogg, wav)-->
+
+    <h1>outras formas de adicionar audios</h1>
+    <audio preload="metadata" autoplay controls loop> <!--e necessario colocar a tag controls para funcionar / loop:quando seu audio termicar ele recomeçar-->
+        <source src="midia/93million.mp3" type="audio/mpeg">
+        <source src="midia/93million.ogg" type="audio/ogg">
+        <source src="midia/93million.wav" type="audio/wav">
+        <p>infelizmente seu navegador não conseguiu abrir o arquivo. <br>use este link para abrir o arquivo <a href="midia/93million.mp3" target="_blank">aqui</a></p>
+    </audio><!--tenha cuidado com direitos autorais-->
+</body>
+</html>

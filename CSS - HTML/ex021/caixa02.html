@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 40px;
+            box-shadow: 4px 4px 15px black;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+    <title>Grouping Tags</title>
+</head>
+<body>
+    <header><!--cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esportes politica e tecnologia
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat dolorem culpa reprehenderit molestias tenetur excepturi dignissimos atque dolores blanditiis illo eligendi fuga eos, explicabo a in voluptatem amet eum cupiditate.</p>
+                <aside>
+                   <p>artigo escrito por jose da silva</p> 
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvimento eplo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
